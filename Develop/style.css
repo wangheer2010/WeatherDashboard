@@ -15,6 +15,12 @@ body {
     font-family:'Times New Roman', Times, serif
 }
 
+.left {
+    margin: 10px;
+    width: 30%;
+    height:100%;
+}
+
 .prompt {
     margin: 10px;
     font-family: 'Times New Roman', Times, serif;
@@ -42,6 +48,18 @@ input[type="text"]{
 input[type="submit"]{
     height: 50px;
     width: 100px;
+    background:turquoise;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size:20px;
+    border:none;
+    border-radius: 2px;
+}
+
+input[type="cts"]{
+    margin:10px;
+    height: 50px;
+    width: 300px;
     background:#e7e7e7;
     font-family:'Times New Roman', Times, serif;
     font-weight:bold;
