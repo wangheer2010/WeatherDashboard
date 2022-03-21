@@ -31,8 +31,8 @@ submitbutton.addEventListener('click',function(){
         wind.innerHTML = windValue + ' MPH';
         humi.innerHTML = humiValue +'%';
         uvIndex.innerHTML = uvIndexValue;
-        let lonValue = data['coord']['lon'];
-        let latValue = data['coord']['lat'];
+        // let lonValue = data['coord']['lon'];
+        // let latValue = data['coord']['lat'];
 
     })
 .catch(err => alert("Wrong city name!"))
