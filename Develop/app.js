@@ -20,11 +20,11 @@ submitbutton.addEventListener('click',function(){
 
         var dateValue = Date(data['dt']);
 
-        var date = dateValue.getDate();
-        var month = dateValue.getMonth(); //Be careful! January is 0 not 1
-        var year = dateValue.getFullYear();
+        // var date = dateValue.getDate();
+        // var month = dateValue.getMonth(); //Be careful! January is 0 not 1
+        // var year = dateValue.getFullYear();
 
-        var dateString = date + "-" +(month + 1) + "-" + year;
+        // var dateString = date + "-" +(month + 1) + "-" + year;
 
         city.innerHTML = cityValue + dateValue;
         temp.innerHTML = tempValue+"\u00B0"+"F";
