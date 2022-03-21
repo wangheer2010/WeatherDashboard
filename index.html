@@ -6,42 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="Develop/style.css">
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
 </head>
-<body>
-    <h1>
+<body class="m-0 p-0">
+    <h1 class="p-2 m-2">
         Weather Dashboard
     </h1>
-    <div class="left">
-        <div class="prompt">
-            <p>Search for a City</p>
-        </div>
-        <div class="input">
-            <input type="text" class="inputValue" placeholder="Enter a city">
-            <input type="submit" value="Submit" class="submitbutton">
-        </div>
-    
-        <div class="bigcities">
-            <input type="cts" value="Austin" class="button">
-            <input type="cts" value="Chicago" class="button">
-            <input type="cts" value="New York" class="button">
-            <input type="cts" value="Orlando" class="button">
-            <input type="cts" value="San Francisco" class="button">
-            <input type="cts" value="Seattle" class="button">
-            <input type="cts" value="Denver" class="button">
-            <input type="cts" value="Atlanta" class="button">
-        </div>
+    <div class="container row col-12">
+            <div class="col-3">
+                <h2 class="prompt m-2">
+                    Search for a City
+                </h2>
+                <!-- A search bar and button -->
+                <div class="input row text-left">
+                    <input type="text" class="inputValue" placeholder="Enter a city">
+                    <input type="submit" value="Submit" class="submitbutton">
+                </div>
+                <!-- Search History -->
+                <ul id="city-results" class="list-group mt-4"></ul>
+                <!-- Clear Storage Button -->
+                <a id="clear-storage" href="#"></a> 
+            </div>
+            
+            <div class="col-8 ml-1">
+                <div class="currentinfo">
+                    <h3 class="city"></h3>
+                    <li class='temp'>Temperature:</li>
+                    <li class='humi'>Humidity:</li>
+                    <li class='wind'>Wind Speed:</li>
+                    <li id="uvIndex">UV Index:</li>
+                </div>
+                <div class="futureinfo"></div>
+            </div>
+        
     </div>
     
-    <div class="display">
-        <div class="currentinfo">
-            <h3 class="city"></h3>
-            <p class="desc"></p>
-            <p class="temp"></p>
-        </div>
-        <div class="futureinfo">
-
-        </div>
-    </div>
 
 <script src="Develop/app.js"></script>
 </body>
